@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_FW7XoUDZEe2p9oIoKEdgIw" label="PROVVIGIONI" language="java" technicalLabel="PROVVIGIONI" author="_FW7XokDZEe2p9oIoKEdgIw" productVersion="Talend Cloud Data Integration-8.0.1.20220818_1145-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/Autotorino/PRV_ENG.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="_FYO_MEDZEe2p9oIoKEdgIw" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_FW7XokDZEe2p9oIoKEdgIw" login="gmazzoni@autotorino.it" firstName="DWH" lastName="Autotorino" type="DI"/>
+</xmi:XMI>

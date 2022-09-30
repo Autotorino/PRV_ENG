@@ -1,0 +1,6 @@
+commonLoging/commonLoging=org.apache.commons.logging.Log\=org.apache.commons.logging.impl.Log4JLogger
+eclipse.preferences.version=1
+isNewProject/isNewProject=true
+log4jContent/log4jContent=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<\!DOCTYPE log4j\:configuration SYSTEM "log4j.dtd">\r\n<log4j\:configuration xmlns\:log4j\='http\://jakarta.apache.org/log4j/' >\r\n\t<\!--  CONSOLE appender  -->\r\n\t<appender name\="CONSOLE" class\="org.apache.log4j.ConsoleAppender">\r\n\t\t<layout class\="org.apache.log4j.PatternLayout">\r\n\t\t\t<param name\="ConversionPattern"  \r\n\t\t\t\tvalue\="%d - [PROVVIGIONI]\:%m%n" />\r\n\t\t</layout>\r\n\t</appender>\r\n\t<\!--  FILE appender  -->\r\n\t<appender name\="LOGFILE" class\="org.apache.log4j.DailyRollingFileAppender">\r\n\t\t<param name\="File" value\="../../Talend-Output/Log/PRV_ENG/PROVVIGIONI.log"/>\r\n\t\t<param name\="Append" value\="true"/>\r\n\t\t<layout class\="org.apache.log4j.PatternLayout">\r\n\t\t\t <param name\="ConversionPattern"\r\n\t\t\t\t  value\="%d - [PROVVIGIONI]\:%m%n" />\r\n\t\t</layout>\r\n\t</appender>\r\n\t<\!-- Root Logger -->  \r\n\t<root>\r\n\t\t<priority value \="info"/>\r\n\t\t<appender-ref ref\="LOGFILE"/>\r\n\t\t<appender-ref ref\="CONSOLE"/>\r\n\t</root>\r\n</log4j\:configuration>
+log4jEnabled/log4jEnabled=true
+log4jVersion2/log4jVersion2=false
