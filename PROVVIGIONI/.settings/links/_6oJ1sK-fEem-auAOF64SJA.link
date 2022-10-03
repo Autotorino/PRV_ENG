@@ -1,225 +1,116 @@
 {
   "itemId" : "_6oJ1sK-fEem-auAOF64SJA",
   "contextList" : [ {
-    "contextName" : "SVIL",
+    "contextName" : "prod",
     "repoId" : "_McuX8KloEemvdbMxCJroiw",
     "parameterList" : [ {
-      "id" : "_pSynh3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwMULmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_FLG_CONFIGURATION_DB"
     }, {
-      "id" : "_pSyniHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwMkLmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_Database"
     }, {
-      "id" : "_pSyniXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwM0LmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_Host"
     }, {
-      "id" : "_pSynind4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwNELmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_Port"
     }, {
-      "id" : "_pSyni3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwNULmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_Password"
     }, {
-      "id" : "_pSynjHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwNkLmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_Login"
     }, {
-      "id" : "_pSynjXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwN0LmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_DATABASE_AdditionalParams"
     }, {
-      "id" : "_pSynjnd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwOELmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_DataBase"
     }, {
-      "id" : "_pSynj3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwOULmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_Host"
     }, {
-      "id" : "_pSynkHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwOkLmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_Port"
     }, {
-      "id" : "_pSynkXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwO0LmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_Password"
     }, {
-      "id" : "_pSynknd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwPELmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_Login"
     }, {
-      "id" : "_pSynk3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwPULmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_Schema"
     }, {
-      "id" : "_pSynlHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwPkLmEe2g0vPC0S5K7g",
       "name" : "HR_DATABASE_AdditionalParams"
     }, {
-      "id" : "_pSynlXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwP0LmEe2g0vPC0S5K7g",
       "name" : "TALEND_PATH_FILE_CSV"
     }, {
-      "id" : "_pSynlnd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwQELmEe2g0vPC0S5K7g",
       "name" : "SFTP_PUBLIC_HOST"
     }, {
-      "id" : "_pSynl3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwQULmEe2g0vPC0S5K7g",
       "name" : "SFTP_PUBLIC_PORT"
     }, {
-      "id" : "_pSynmHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwQkLmEe2g0vPC0S5K7g",
       "name" : "SFTP_PUBLIC_USER"
     }, {
-      "id" : "_pSynmXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwQ0LmEe2g0vPC0S5K7g",
       "name" : "SFTP_PUBLIC_PWD"
     }, {
-      "id" : "_pSynmnd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwRELmEe2g0vPC0S5K7g",
       "name" : "SFTP_PUBLIC_PATH"
     }, {
-      "id" : "_pSynm3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwRULmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Server"
     }, {
-      "id" : "_pSynnHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwRkLmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Port"
     }, {
-      "id" : "_pSynnXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwR0LmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Database"
     }, {
-      "id" : "_pSynnnd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwSELmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Login"
     }, {
-      "id" : "_pSynn3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwSULmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Password"
     }, {
-      "id" : "_pSynoHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwSkLmEe2g0vPC0S5K7g",
       "name" : "SIPADX_DB_Schema"
     }, {
-      "id" : "_pSynoXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwS0LmEe2g0vPC0S5K7g",
       "name" : "QV_CATENE_PATH_FILE"
     }, {
-      "id" : "_pSynond4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwTELmEe2g0vPC0S5K7g",
       "name" : "PAD_VENDITE_PATH_FILE"
     }, {
-      "id" : "_pSyno3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwTULmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_NOTIFY"
     }, {
-      "id" : "_pSynpHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwTkLmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_SMTP_HOST"
     }, {
-      "id" : "_pSynpXd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwT0LmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_SMTP_PORT"
     }, {
-      "id" : "_pSynpnd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwUELmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_SMTP_USER"
     }, {
-      "id" : "_pSynp3d4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwUULmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_SMTP_PWD"
     }, {
-      "id" : "_pSynqHd4EeuBjrnSv8e_SQ",
+      "id" : "_MQOwUkLmEe2g0vPC0S5K7g",
       "name" : "DDP_AT_MAIL_SMTP_DEST"
     }, {
-      "id" : "_bAwOwJ65Eeu4LPiYzJv8Uw",
-      "name" : "TALEND_PATH_BUILD"
+      "id" : "_MQOwU0LmEe2g0vPC0S5K7g",
+      "name" : "TALEND_PATH_LOG"
     } ]
   }, {
-    "contextName" : "PROD",
-    "repoId" : "_McuX8KloEemvdbMxCJroiw",
-    "parameterList" : [ {
-      "id" : "_pSynZHd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_FLG_CONFIGURATION_DB"
-    }, {
-      "id" : "_pSynZXd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_Database"
-    }, {
-      "id" : "_pSynZnd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_Host"
-    }, {
-      "id" : "_pSynZ3d4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_Port"
-    }, {
-      "id" : "_pSynaHd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_Password"
-    }, {
-      "id" : "_pSynaXd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_Login"
-    }, {
-      "id" : "_pSynand4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_DATABASE_AdditionalParams"
-    }, {
-      "id" : "_pSyna3d4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_DataBase"
-    }, {
-      "id" : "_pSynbHd4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_Host"
-    }, {
-      "id" : "_pSynbXd4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_Port"
-    }, {
-      "id" : "_pSynbnd4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_Password"
-    }, {
-      "id" : "_pSynb3d4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_Login"
-    }, {
-      "id" : "_pSyncHd4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_Schema"
-    }, {
-      "id" : "_pSyncXd4EeuBjrnSv8e_SQ",
-      "name" : "HR_DATABASE_AdditionalParams"
-    }, {
-      "id" : "_pSyncnd4EeuBjrnSv8e_SQ",
-      "name" : "TALEND_PATH_FILE_CSV"
-    }, {
-      "id" : "_pSync3d4EeuBjrnSv8e_SQ",
-      "name" : "SFTP_PUBLIC_HOST"
-    }, {
-      "id" : "_pSyndHd4EeuBjrnSv8e_SQ",
-      "name" : "SFTP_PUBLIC_PORT"
-    }, {
-      "id" : "_pSyndXd4EeuBjrnSv8e_SQ",
-      "name" : "SFTP_PUBLIC_USER"
-    }, {
-      "id" : "_pSyndnd4EeuBjrnSv8e_SQ",
-      "name" : "SFTP_PUBLIC_PWD"
-    }, {
-      "id" : "_pSynd3d4EeuBjrnSv8e_SQ",
-      "name" : "SFTP_PUBLIC_PATH"
-    }, {
-      "id" : "_pSyneHd4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Server"
-    }, {
-      "id" : "_pSyneXd4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Port"
-    }, {
-      "id" : "_pSynend4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Database"
-    }, {
-      "id" : "_pSyne3d4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Login"
-    }, {
-      "id" : "_pSynfHd4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Password"
-    }, {
-      "id" : "_pSynfXd4EeuBjrnSv8e_SQ",
-      "name" : "SIPADX_DB_Schema"
-    }, {
-      "id" : "_pSynfnd4EeuBjrnSv8e_SQ",
-      "name" : "QV_CATENE_PATH_FILE"
-    }, {
-      "id" : "_pSynf3d4EeuBjrnSv8e_SQ",
-      "name" : "PAD_VENDITE_PATH_FILE"
-    }, {
-      "id" : "_pSyngHd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_NOTIFY"
-    }, {
-      "id" : "_pSyngXd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_SMTP_HOST"
-    }, {
-      "id" : "_pSyngnd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_SMTP_PORT"
-    }, {
-      "id" : "_pSyng3d4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_SMTP_USER"
-    }, {
-      "id" : "_pSynhHd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_SMTP_PWD"
-    }, {
-      "id" : "_pSynhXd4EeuBjrnSv8e_SQ",
-      "name" : "DDP_AT_MAIL_SMTP_DEST"
-    }, {
-      "id" : "_bAmdwZ65Eeu4LPiYzJv8Uw",
-      "name" : "TALEND_PATH_BUILD"
-    } ]
-  }, {
-    "contextName" : "CERT",
+    "contextName" : "dev",
     "repoId" : "_McuX8KloEemvdbMxCJroiw",
     "parameterList" : [ {
       "id" : "_pSynQXd4EeuBjrnSv8e_SQ",
@@ -325,7 +216,116 @@
       "name" : "DDP_AT_MAIL_SMTP_DEST"
     }, {
       "id" : "_bAmdwJ65Eeu4LPiYzJv8Uw",
-      "name" : "TALEND_PATH_BUILD"
+      "name" : "TALEND_PATH_LOG"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_pSynh3d4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_FLG_CONFIGURATION_DB"
+    }, {
+      "id" : "_pSyniHd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_Database"
+    }, {
+      "id" : "_pSyniXd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_Host"
+    }, {
+      "id" : "_pSynind4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_Port"
+    }, {
+      "id" : "_pSyni3d4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_Password"
+    }, {
+      "id" : "_pSynjHd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_Login"
+    }, {
+      "id" : "_pSynjXd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_DATABASE_AdditionalParams"
+    }, {
+      "id" : "_pSynjnd4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_DataBase"
+    }, {
+      "id" : "_pSynj3d4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_Host"
+    }, {
+      "id" : "_pSynkHd4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_Port"
+    }, {
+      "id" : "_pSynkXd4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_Password"
+    }, {
+      "id" : "_pSynknd4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_Login"
+    }, {
+      "id" : "_pSynk3d4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_Schema"
+    }, {
+      "id" : "_pSynlHd4EeuBjrnSv8e_SQ",
+      "name" : "HR_DATABASE_AdditionalParams"
+    }, {
+      "id" : "_pSynlXd4EeuBjrnSv8e_SQ",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_pSynlnd4EeuBjrnSv8e_SQ",
+      "name" : "SFTP_PUBLIC_HOST"
+    }, {
+      "id" : "_pSynl3d4EeuBjrnSv8e_SQ",
+      "name" : "SFTP_PUBLIC_PORT"
+    }, {
+      "id" : "_pSynmHd4EeuBjrnSv8e_SQ",
+      "name" : "SFTP_PUBLIC_USER"
+    }, {
+      "id" : "_pSynmXd4EeuBjrnSv8e_SQ",
+      "name" : "SFTP_PUBLIC_PWD"
+    }, {
+      "id" : "_pSynmnd4EeuBjrnSv8e_SQ",
+      "name" : "SFTP_PUBLIC_PATH"
+    }, {
+      "id" : "_pSynm3d4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_pSynnHd4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_pSynnXd4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_pSynnnd4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_pSynn3d4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_pSynoHd4EeuBjrnSv8e_SQ",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_pSynoXd4EeuBjrnSv8e_SQ",
+      "name" : "QV_CATENE_PATH_FILE"
+    }, {
+      "id" : "_pSynond4EeuBjrnSv8e_SQ",
+      "name" : "PAD_VENDITE_PATH_FILE"
+    }, {
+      "id" : "_pSyno3d4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_pSynpHd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_pSynpXd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_pSynpnd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_pSynp3d4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_pSynqHd4EeuBjrnSv8e_SQ",
+      "name" : "DDP_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_bAwOwJ65Eeu4LPiYzJv8Uw",
+      "name" : "TALEND_PATH_LOG"
     } ]
   } ]
 }

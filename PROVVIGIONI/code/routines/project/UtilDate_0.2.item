@@ -1,0 +1,93 @@
+package routines;
+
+import java.text.Format;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
+public class UtilDate {
+	
+	public static String getFormatDateStd(Date date){
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+	    String dataStr = sdf.format(date);
+	    return dataStr;
+	}
+	
+	public static String getFormatDate(Date date, String pattern){
+		SimpleDateFormat sdf = new SimpleDateFormat(pattern); 
+	    String dataStr = sdf.format(date);
+	    return dataStr;
+	}
+	
+	public static Date subtractsYearMonDays(Date date, int number, String format){
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		if (format.equals("Y")) {
+			cal.add(Calendar.YEAR, -number);
+		} else if (format.equals("M")) {
+			
+			cal.add(Calendar.MONTH, -number);
+		} else if (format.equals("D")) {
+			cal.add(Calendar.DAY_OF_MONTH, -number);
+		}
+		
+		return cal.getTime();
+	}
+	
+	public static Date addYearMonDays(Date date, int number, String format){
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+
+		if (format.equals("YEAR")) {
+			cal.add(Calendar.YEAR, number);
+		} else if (format.equals("MONTH")) {
+			cal.add(Calendar.MONTH, number);
+		} else if (format.equals("DAYS")) {
+			cal.add(Calendar.DAY_OF_MONTH, number);
+		}
+		
+		return cal.getTime();
+	}
+	
+	public static String convertTimeToDateStd(long time){
+	    Date date = new Date(time);
+	    Format format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	    return format.format(date);
+	}
+	
+    public static Date parseDateWithMultiplePattern(String dateStr,String...patterns){
+		
+		Date returnDate = null;
+		
+		if(patterns!=null && patterns.length>0){
+			for (String pattern :patterns)
+			{
+				SimpleDateFormat sdf = null;
+	            if(pattern.equals("EEE MMM dd HH:mm:ss zzz yyyy")){
+					sdf = new SimpleDateFormat(pattern,Locale.US);
+	            }
+	            else{
+	            	sdf = new SimpleDateFormat(pattern);
+	            }
+					
+				try{
+				  returnDate = sdf.parse(dateStr);
+				}
+				catch(ParseException pe){/*ignore*/}
+			}
+		}
+		else{
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+			    try{
+				  returnDate = sdf.parse(dateStr);
+				}
+				catch(ParseException pe){/*ignore*/}
+
+		}
+		
+		return returnDate;
+	}
+
+}

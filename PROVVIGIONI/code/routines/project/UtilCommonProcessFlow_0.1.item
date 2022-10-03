@@ -1,0 +1,95 @@
+package routines;
+
+import java.util.Map;
+import java.util.ArrayList;
+
+public class UtilCommonProcessFlow {
+
+   public static void manageAndCheckDataSource_JobStage(Map<String,Object> globalMap) 
+   {
+	
+	      ArrayList<String> codiciDS = ((ArrayList<String>)globalMap.get("codiciArrayDS"));
+		  String dataSourceCode = codiciDS.get(((Integer)globalMap.get("tLoop_1_CURRENT_VALUE"))-1);
+		  
+		  globalMap.put("CurrentProcessDS",dataSourceCode);
+		  globalMap.put("CurrentProcessIDDS","0");
+		  globalMap.remove("lastInsertProcessID");
+		  globalMap.remove("rowsInsertRecord_STG");
+		  
+		  String infoElabDS[] = ((String[])globalMap.get(dataSourceCode));
+		  
+		  if (infoElabDS!=null){
+		      
+		      String idDS = infoElabDS[0];
+		      globalMap.put("CurrentProcessIDDS",idDS);
+
+		      String active = infoElabDS[4];
+		      String frequencyRole = infoElabDS[5];
+		      
+		      globalMap.put("CurrentProcessDSScopeJob",infoElabDS[10]);
+		      
+		      if (active.equals("1") && UtilScheduleRoleDS.isSatisfiedByDate(frequencyRole))
+		      {
+		    	  
+		          globalMap.put("CurrentProcessDSStatus",dataSourceCode+"started");
+		          globalMap.put("CurrentProcessDSFilePrefix",infoElabDS[2]);
+		          globalMap.put("CurrentProcessDSFileType",infoElabDS[3]);
+		          globalMap.put("CurrentProcessDSNature",infoElabDS[9]);
+		          globalMap.put("CurrentProcessDSFrequencyRole",frequencyRole);
+		          globalMap.put("CurrentProcessDSFrequencyType",infoElabDS[6]);
+		          globalMap.put("CurrentProcessDSLastReceive",infoElabDS[7]);
+		          
+		          
+		          String configTemplateDs = infoElabDS[8];
+		          			      
+		          String[] splitConfTemplateDs = null;
+				  if (configTemplateDs!=null && (splitConfTemplateDs = configTemplateDs.split(";")).length==4){
+					  						  
+					  globalMap.put("CurrentProcessDSHeader",
+					           splitConfTemplateDs[0].split(":").length==2?splitConfTemplateDs[0].split(":")[1]:"F");
+					  globalMap.put("CurrentProcessDSFooter",
+					           splitConfTemplateDs[1].split(":").length==2?splitConfTemplateDs[1].split(":")[1]:"F");
+					  globalMap.put("CurrentProcessDSIntestazione",
+					           splitConfTemplateDs[2].split(":").length==2?splitConfTemplateDs[2].split(":")[1]:"1");
+					  globalMap.put("CurrentProcessDSColumnStart",
+					           splitConfTemplateDs[3].split(":").length==2?splitConfTemplateDs[3].split(":")[1]:"1");
+		          }
+		          
+		      }
+		      else{
+		          if(active.equals("0"))
+		             globalMap.put("CurrentProcessDSStatus",dataSourceCode+"disabled");
+		          else
+		             globalMap.put("CurrentProcessDSStatus",dataSourceCode+"norunday");
+		      }
+		  }
+		  else{
+		         globalMap.put("CurrentProcessDSStatus",dataSourceCode+"none");
+		  }
+    }
+   
+   public static void manageInfoExtraction(String jobName,String codeDS,String path,Integer ggStoric,String entityStoricControl,Map<String,Object> globalMap) {
+	   
+	   org.apache.log4j.Logger.getRootLogger().info("["+jobName+"]:<Relative Path "+codeDS+":"+path+">");
+	   org.apache.log4j.Logger.getRootLogger().info("["+jobName+"]:<Numero Giorni Storico "+codeDS+":"+ggStoric+">");
+	   org.apache.log4j.Logger.getRootLogger().info("["+jobName+"]:<Source Entity Storico "+codeDS+":"+entityStoricControl+">");
+	   
+	   globalMap.put("startElaborationDS",TalendDate.getDate("yyyy-MM-dd HH:mm:ss"));
+
+
+	   if (path!=null)
+	       globalMap.put("relativePath"+codeDS,"/"+path);
+	   else    
+	       globalMap.put("relativePath"+codeDS,"");
+	       
+	   if (ggStoric!=null && entityStoricControl!=null)
+	       { 
+	          globalMap.put("num_GG_Storic",ggStoric.toString());
+	   	      globalMap.put("entityStoricControl",entityStoricControl);
+	   	      globalMap.put("conditionStoric","true");
+	   	}
+	   else
+	   	globalMap.put("conditionStoric","false");  
+	   
+   }
+}

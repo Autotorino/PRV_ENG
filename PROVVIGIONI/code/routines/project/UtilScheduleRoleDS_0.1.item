@@ -1,0 +1,120 @@
+package routines;
+
+import java.text.ParseException;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.quartz.CronExpression;
+
+public class UtilScheduleRoleDS {
+     
+	public static boolean isSatisfiedByDate(String cronFrequency){
+		
+		boolean satisfied = false;
+		try {
+		     CronExpression crone = new CronExpression(cronFrequency);
+		     satisfied = crone.isSatisfiedBy(new Date());
+
+		}
+		catch(ParseException pe){
+			pe.printStackTrace();
+			return false;
+		}
+		
+		return satisfied;
+	}
+	
+	
+	public static boolean isAbsentInFrequencyPeriod(String lastProcessDate,String cronFrequency,String typeFrequency){
+		
+		Calendar cal = null;
+		
+		if (typeFrequency.equals("D")){
+			return true;
+		}
+		else if (typeFrequency.equals("W"))
+		{
+			try {
+				Date toDay = new Date();
+				cal = Calendar.getInstance();
+				cal.setTime(toDay);
+				
+				int weekToDay = cal.get(cal.WEEK_OF_YEAR);
+				
+				cal.add(Calendar.DATE, 1);
+				Date afterOneDay = cal.getTime();
+				CronExpression crone = new CronExpression(cronFrequency);
+				Date nextValidDay = crone.getNextValidTimeAfter(afterOneDay);
+				cal.setTime(nextValidDay);
+				
+				int weekNextElaboration = cal.get(cal.WEEK_OF_YEAR);
+				
+				if(weekToDay==weekNextElaboration){
+				   return false;
+				}
+				else {
+					int weekLastProcessDay = 0;
+					if(lastProcessDate!=null){
+						Date lastProcessDay = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss", lastProcessDate);
+						cal.setTime(lastProcessDay);
+						weekLastProcessDay = cal.get(cal.WEEK_OF_YEAR);
+					}
+					
+					if(weekToDay!=weekLastProcessDay){
+						return true;
+					}
+				}
+			}
+			catch(ParseException pe){
+				pe.printStackTrace();
+				return false;
+			}
+			
+		}
+		else if (typeFrequency.equals("M"))
+		{
+			try {
+				Date toDay = new Date();
+				cal = Calendar.getInstance();
+				cal.setTime(toDay);
+				
+				int monthToDay = cal.get(cal.MONTH);
+				
+				cal.add(Calendar.DATE, 1);
+				Date afterOneDay = cal.getTime();
+				CronExpression crone = new CronExpression(cronFrequency);
+				Date nextValidDay = crone.getNextValidTimeAfter(afterOneDay);
+				cal.setTime(nextValidDay);
+				
+				int monthNextElaboration = cal.get(cal.MONTH);
+				
+				if(monthToDay==monthNextElaboration){
+				   return false;
+				}
+				else {
+					int monthLastProcessDay = 0;
+					if(lastProcessDate!=null){
+						Date lastProcessDay = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss", lastProcessDate);
+						cal.setTime(lastProcessDay);
+						monthLastProcessDay = cal.get(cal.MONTH);
+					}
+					
+					if(monthToDay!=monthLastProcessDay){
+						return true;
+					}
+				}
+			}
+			catch(ParseException pe){
+				pe.printStackTrace();
+				return false;
+			}
+			
+			
+		} 
+		
+		
+		return false;
+		
+	}
+
+}
